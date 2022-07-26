@@ -1,0 +1,96 @@
+{
+  "ReRoutes": [
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi/{url}",
+    //  "UpstreamPathTemplate": "/carapi/{url}"
+    //},
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi/",
+    //  "UpstreamPathTemplate": "/carapi/"
+    //},
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi",
+    //  "UpstreamPathTemplate": "/carapi"
+    //},
+    {
+      "DownstreamPathTemplate": "/api/carapi",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/carapi/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44305"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/login",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/list",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/admins",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/admins",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "ProviderKey",
+      //  "AllowedScopes": []
+      //},
+      //"AddHeadersToRequest": {
+      //  "Username": "Claims[Username] > value > |"
+      //}
+
+    }
+  ]
+}

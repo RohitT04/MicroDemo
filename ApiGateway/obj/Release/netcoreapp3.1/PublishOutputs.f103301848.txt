@@ -1,0 +1,16 @@
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\ApiGateway.exe
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\appsettings.Development.json
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\appsettings.json
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Ocelot.json
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\ApiGateway.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\ApiGateway.deps.json
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\ApiGateway.runtimeconfig.json
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\ApiGateway.pdb
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\FluentValidation.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Microsoft.AspNetCore.JsonPatch.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Newtonsoft.Json.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Newtonsoft.Json.Bson.dll
+D:\Projects\Test Pro\MicroS-Demo\ApiGateway\obj\Docker\publish\Ocelot.dll

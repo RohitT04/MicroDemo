@@ -1,0 +1,42 @@
+USE [BikeMicroService]
+GO
+/****** Object:  Table [dbo].[Bikes]    Script Date: 31-10-2022 12:05:11 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Bikes](
+	[BikeId] [int] IDENTITY(1,1) NOT NULL,
+	[BikeName] [nvarchar](max) NULL,
+	[BikeType] [nvarchar](max) NULL,
+	[BikeBrand] [nvarchar](max) NULL,
+ CONSTRAINT [PK_Bikes] PRIMARY KEY CLUSTERED 
+(
+	[BikeId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Bikes] ON 
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (1, N'Xtreme', N'Sport', N'Hero')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (2, N'Apache', N'Sport', N'TVS')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (3, N'CB-Shine', N'Normal', N'Honda')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (4, N'FZ', N'Sport', N'Yamaha')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (5, N'Activa', N'Scooter', N'Honda')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (6, N'Pulser', N'Sport', N'TVS')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (7, N'Avenger', N'Sport', N'Baja')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (8, N'CBZ', N'Sport', N'Yamaha')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (9, N'Hyabusa', N'Sport', N'Suzuki')
+GO
+INSERT [dbo].[Bikes] ([BikeId], [BikeName], [BikeType], [BikeBrand]) VALUES (10, N'Hyabusa1', N'Sport', N'Suzuki')
+GO
+SET IDENTITY_INSERT [dbo].[Bikes] OFF
+GO

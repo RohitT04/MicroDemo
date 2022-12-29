@@ -1,0 +1,26 @@
+USE [CarMicroService]
+GO
+/****** Object:  Table [dbo].[cars]    Script Date: 31-10-2022 12:07:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[cars](
+	[carid] [nvarchar](450) NOT NULL,
+	[carname] [nvarchar](max) NULL,
+	[cartype] [nvarchar](max) NULL,
+	[carbrand] [nvarchar](max) NULL,
+ CONSTRAINT [PK_cars] PRIMARY KEY CLUSTERED 
+(
+	[carid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+INSERT [dbo].[cars] ([carid], [carname], [cartype], [carbrand]) VALUES (N'1', N'Polo', N'HatchBack', N'VW')
+GO
+INSERT [dbo].[cars] ([carid], [carname], [cartype], [carbrand]) VALUES (N'2', N'i20', N'HatchBack', N'Hyundai')
+GO
+INSERT [dbo].[cars] ([carid], [carname], [cartype], [carbrand]) VALUES (N'3', N'Spark', N'HatchBack', N'Chevy')
+GO
+INSERT [dbo].[cars] ([carid], [carname], [cartype], [carbrand]) VALUES (N'4', N'Scorpio', N'SUV', N'Mahindra')
+GO

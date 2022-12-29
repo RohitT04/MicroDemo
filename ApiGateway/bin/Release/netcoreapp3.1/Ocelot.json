@@ -1,5 +1,17 @@
 {
   "ReRoutes": [
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi/{url}",
+    //  "UpstreamPathTemplate": "/carapi/{url}"
+    //},
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi/",
+    //  "UpstreamPathTemplate": "/carapi/"
+    //},
+    //{
+    //  "DownstreamPathTemplate": "/api/carapi",
+    //  "UpstreamPathTemplate": "/carapi"
+    //},
     {
       "DownstreamPathTemplate": "/api/carapi",
       "DownstreamScheme": "http",
@@ -9,8 +21,32 @@
           "Port": "50792"
         }
       ],
-      "UpstreamPathTemplate": "/carapi",
+      "UpstreamPathTemplate": "/api/carapi",
       "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/carapi/listofbikefromcar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi/listofbikefromcar",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/carapi/addbikefromcar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi/addbikefromcar",
+      "UpstreamHttpMethod": [ "POST" ]
     },
     {
       "DownstreamPathTemplate": "/api/carapi/{id}",
@@ -21,8 +57,20 @@
           "Port": "50792"
         }
       ],
-      "UpstreamPathTemplate": "/carapi/{id}",
+      "UpstreamPathTemplate": "/api/carapi/{id}",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44305"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/login",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
     },
     {
       "DownstreamPathTemplate": "/api/bike",
@@ -33,8 +81,64 @@
           "Port": "14493"
         }
       ],
-      "UpstreamPathTemplate": "/bike",
+      "UpstreamPathTemplate": "/api/bike",
       "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/list",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/list1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/list1",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/admins",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/admins",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "ProviderKey",
+      //  "AllowedScopes": []
+      //},
+      //"AddHeadersToRequest": {
+      //  "Username": "Claims[Username] > value > |"
+      //}
+
     }
   ]
 }

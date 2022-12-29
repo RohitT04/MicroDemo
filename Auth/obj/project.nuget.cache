@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wFEDy1sRAuQvrefQbpHZlmCDUQjgmKNcSr6l3BbTPFHi4TQ2Lwe/mtuCh7colmmT15gnBcpgPCClq9Ai45BbLQ==",
+  "dgSpecHash": "4VkO4sl35QcvKkz6Cof478Ce7MAj3Be/S+y46RfsHWcf9ePXh2ztqVcIh5oT+gwXdVdgjM3c7h1rxpLjXP4sHg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\Auth.csproj",
+  "projectFilePath": "D:\\MicroS-Demo\\Auth\\Auth.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SiplBPL\\.nuget\\packages\\fluentvalidation\\8.5.0\\fluentvalidation.8.5.0.nupkg.sha512",
     "C:\\Users\\SiplBPL\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.20\\microsoft.aspnetcore.authentication.jwtbearer.3.1.20.nupkg.sha512",

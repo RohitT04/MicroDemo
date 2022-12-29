@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj": {}
+    "D:\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj": {
+    "D:\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "D:\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "D:\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\SiplBPL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\obj\\",
+        "outputPath": "D:\\MicroS-Demo\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiplBPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

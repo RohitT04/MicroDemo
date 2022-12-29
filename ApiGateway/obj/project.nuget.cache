@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z5RZD3f6vgIscSyQAfTibrqvloiNScq6mYXIwhIKOSAjMr/e+UNMdt5zpI7W6PJDS8UCOYb8AgPBqq2WakhEtw==",
+  "dgSpecHash": "PU1x0WQsofvaSOr1lGfaCQEEFnLq8iEcXLt6sqlbEc5nabqn3yKf12bQMDX7+kcQMGUIsE//ZVtrluO9wYO20Q==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Test Pro\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
+  "projectFilePath": "D:\\MicroS-Demo\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SiplBPL\\.nuget\\packages\\fluentvalidation\\8.5.0\\fluentvalidation.8.5.0.nupkg.sha512",
     "C:\\Users\\SiplBPL\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.20\\microsoft.aspnetcore.authentication.jwtbearer.3.1.20.nupkg.sha512",

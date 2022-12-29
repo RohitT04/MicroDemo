@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\Auth.csproj": {}
+    "D:\\MicroS-Demo\\Auth\\Auth.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\Auth.csproj": {
+    "D:\\MicroS-Demo\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\Auth.csproj",
+        "projectUniqueName": "D:\\MicroS-Demo\\Auth\\Auth.csproj",
         "projectName": "Auth",
-        "projectPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\Auth.csproj",
+        "projectPath": "D:\\MicroS-Demo\\Auth\\Auth.csproj",
         "packagesPath": "C:\\Users\\SiplBPL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\Auth\\obj\\",
+        "outputPath": "D:\\MicroS-Demo\\Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiplBPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,7 +81,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -93,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

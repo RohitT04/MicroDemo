@@ -4,22 +4,24 @@ using BikeService.Database.Entites;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace BikeService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
 
-    
+
     public class BikeController : ControllerBase
     {
         DatabaseContext db;
-
+        HttpClientHandler _clientHandler = new HttpClientHandler();
         public BikeController()
         {
             db = new DatabaseContext();
@@ -34,15 +36,28 @@ namespace BikeService.Controllers
             return Ok($"Hi {currentUser.GivenName}, you are an {currentUser.Role}");
         }
 
-
-        [HttpGet("list")]
-        [Authorize]
+        [Authorize, HttpGet("list")]
         public IEnumerable<Bike> Get()
         {
             return db.Bikes.ToList();
         }
 
-        [HttpPost]
+        [Authorize, HttpGet("list1")]
+        public async Task<string> Get1()
+        {
+            using (var httpclient = new HttpClient(_clientHandler))
+            {
+                var accesstoken = Request.Headers[HeaderNames.Authorization];
+                httpclient.DefaultRequestHeaders.Add("Authorization", "" + accesstoken);
+                using (var response = await httpclient.GetAsync("http://localhost:50792/api/CarAPI/list"))
+                {
+                    string apiresponse = await response.Content.ReadAsStringAsync();
+                    return apiresponse;
+                }
+            }
+        }
+
+        [Authorize, HttpPost("add")]
         public IActionResult Post([FromBody] Bike model)
         {
             try
@@ -55,7 +70,6 @@ namespace BikeService.Controllers
             {
                 return StatusCode(500, e.Message);
             }
-
         }
         private UserModel GetCurrentUser()
         {
@@ -76,6 +90,5 @@ namespace BikeService.Controllers
             }
             return null;
         }
-
     }
 }

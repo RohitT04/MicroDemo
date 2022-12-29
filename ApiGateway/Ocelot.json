@@ -25,6 +25,30 @@
       "UpstreamHttpMethod": [ "GET", "POST" ]
     },
     {
+      "DownstreamPathTemplate": "/api/carapi/listofbikefromcar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi/listofbikefromcar",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/carapi/addbikefromcar",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50792"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/carapi/addbikefromcar",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/carapi/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -71,6 +95,30 @@
       ],
       "UpstreamPathTemplate": "/api/bike/list",
       "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/list1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/list1",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/bike/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "14493"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/bike/add",
+      "UpstreamHttpMethod": [ "POST" ]
     },
     {
       "DownstreamPathTemplate": "/api/bike/admins",

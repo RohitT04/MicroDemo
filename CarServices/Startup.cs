@@ -6,7 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using System.Web.Http;
 
 namespace CarServices
 {
@@ -17,17 +16,14 @@ namespace CarServices
             Configuration = configuration;
         }
 
-        public static void Register(HttpConfiguration config)
-        {
-            config.Filters.Add(new System.Web.Http.AuthorizeAttribute());
-        }
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options => {
+                .AddJwtBearer(options =>
+                {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
                         ValidateIssuer = false,

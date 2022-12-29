@@ -15,6 +15,7 @@ namespace Auth.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
+        public string token1;
         private IConfiguration _config;
 
         public LoginController(IConfiguration config)

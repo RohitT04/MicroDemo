@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\CarServices\\CarServices.csproj": {}
+    "D:\\MicroS-Demo\\CarServices\\CarServices.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\jwt-dotnetcore-web-main\\JwtApp.csproj": {
+    "D:\\MicroS-Demo\\Auth\\Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\jwt-dotnetcore-web-main\\JwtApp.csproj",
-        "projectName": "JwtApp",
-        "projectPath": "D:\\Projects\\jwt-dotnetcore-web-main\\JwtApp.csproj",
+        "projectUniqueName": "D:\\MicroS-Demo\\Auth\\Auth.csproj",
+        "projectName": "Auth",
+        "projectPath": "D:\\MicroS-Demo\\Auth\\Auth.csproj",
         "packagesPath": "C:\\Users\\SiplBPL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\jwt-dotnetcore-web-main\\obj\\",
+        "outputPath": "D:\\MicroS-Demo\\Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiplBPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,13 +44,35 @@
               "target": "Package",
               "version": "[3.1.20, )"
             },
-            "Microsoft.IdentityModel.Tokens": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.14.1, )"
+              "version": "[3.1.0, )"
             },
-            "System.IdentityModel.Tokens.Jwt": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.14.1, )"
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Ocelot": {
+              "target": "Package",
+              "version": "[13.8.0, )"
             }
           },
           "imports": [
@@ -59,7 +81,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,18 +94,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\Test Pro\\MicroS-Demo\\CarServices\\CarServices.csproj": {
+    "D:\\MicroS-Demo\\CarServices\\CarServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Test Pro\\MicroS-Demo\\CarServices\\CarServices.csproj",
+        "projectUniqueName": "D:\\MicroS-Demo\\CarServices\\CarServices.csproj",
         "projectName": "CarServices",
-        "projectPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\CarServices\\CarServices.csproj",
+        "projectPath": "D:\\MicroS-Demo\\CarServices\\CarServices.csproj",
         "packagesPath": "C:\\Users\\SiplBPL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Test Pro\\MicroS-Demo\\CarServices\\obj\\",
+        "outputPath": "D:\\MicroS-Demo\\CarServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SiplBPL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,8 +122,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Projects\\jwt-dotnetcore-web-main\\JwtApp.csproj": {
-                "projectPath": "D:\\Projects\\jwt-dotnetcore-web-main\\JwtApp.csproj"
+              "D:\\MicroS-Demo\\Auth\\Auth.csproj": {
+                "projectPath": "D:\\MicroS-Demo\\Auth\\Auth.csproj"
               }
             }
           }
@@ -115,10 +138,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -144,7 +163,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -156,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

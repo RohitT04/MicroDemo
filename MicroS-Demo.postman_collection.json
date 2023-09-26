@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "877d7170-00e2-48d9-9cdd-cbfd5eb62a60",
+		"name": "MicroS-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23809792"
+	},
+	"item": [
+		{
+			"name": "http://localhost:14493/api/bike/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imphc29uX2FkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiamFzb24uYWRtaW5AZW1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiSmFzb24iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zdXJuYW1lIjoiQnJ5YW50IiwiZXhwIjoxNjcyMjIzNjA3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEifQ.0ifnxlHJlK2dyfslg7uXwZg8ugRHFxmJItke8fX_sWE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:14493/api/bike/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14493",
+					"path": [
+						"api",
+						"bike",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50792/api/CarAPI/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imphc29uX2FkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiamFzb24uYWRtaW5AZW1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiSmFzb24iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zdXJuYW1lIjoiQnJ5YW50IiwiZXhwIjoxNjcyMjIyOTM4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEifQ.RngO3CnYvq4p3hCZlWUzicqmUB8-BnyIGkBv6Z2n9LE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Username\": \"jason_admin\", \"Password\": \"MyPass_w0rd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50792/api/CarAPI/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50792",
+					"path": [
+						"api",
+						"CarAPI",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44305/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Username\": \"jason_admin\", \"Password\": \"MyPass_w0rd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44305/api/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44305",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4361/api/bike/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imphc29uX2FkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiamFzb24uYWRtaW5AZW1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiSmFzb24iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zdXJuYW1lIjoiQnJ5YW50IiwiZXhwIjoxNjcyMjI2Mzg5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEifQ.0xJ04ZZJ3xKd5-aGMmUr8HEJXYcLVBhJ1GuJx3HeYvE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BikeId\": 1,\r\n    \"BikeName\": \"Ducati D-100\",\r\n    \"BikeType\": \"Sport\",\r\n    \"BikeBrand\": \"Ducati\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4361/api/bike/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4361",
+					"path": [
+						"api",
+						"bike",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:14493/api/bike/list",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Imphc29uX2FkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiamFzb24uYWRtaW5AZW1haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiSmFzb24iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zdXJuYW1lIjoiQnJ5YW50IiwiZXhwIjoxNjcyMjI1NDUwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQzNjEifQ.ouR3nzmSMIjeSCikvKir1ss3H4srP1HQOaleH7dFUGw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BikeId\": 1,\r\n    \"BikeName\": \"Ducati D-100\",\r\n    \"BikeType\": \"Sport\",\r\n    \"BikeBrand\": \"Ducati\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:14493/api/bike",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "14493",
+					"path": [
+						"api",
+						"bike"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
